@@ -1,15 +1,14 @@
 import { styled } from "..";
 
-
 export const HomeContainer = styled('main', {
   display: 'flex',
   width: '100%',
-  maxWidth: 'calc(100vw - ((100vw - 1180pc) / 2))',
+  maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
   marginLeft: 'auto',
   minHeight: 656
 })
 
-export const Product = styled('a', {
+export const Product = styled('div', {
   background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
   borderRadius: 8,
   cursor: 'pointer',
@@ -39,13 +38,13 @@ export const Product = styled('a', {
 
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
 
-    transform: 'transalteY(110%)',
+    transform: 'translateY(110%)',
     opacity: 0,
     transition: 'all 0.2s ease-in-out',
 
     strong: {
       fontSize: '$lg',
-      color: '$gray100'
+      color: '$gray100',
     },
 
     span: {
@@ -53,13 +52,12 @@ export const Product = styled('a', {
       fontWeight: 'bold',
       color: '$green300'
     },
-
   },
 
   '&:hover': {
     footer: {
-      transaform: 'transaleteY(0%)',
-      opacity: 1,
+      transform: 'translateY(0%)',
+      opacity: 1
     }
   }
 })
